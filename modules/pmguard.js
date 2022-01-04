@@ -169,7 +169,7 @@ async function handlePm(id, user) {
         } else {
             return {
                 action: false,
-                msg: pmMsg ? pmMsg.msg.replace(/\{name}/gi, user).replace(/\{wanrs}/gi, read.msgCount ? read.msgCount : 0) + '\n\nPowered by *WhatsGram*' : `Hello, *${user}*!\nMy Master is Busy As Of Now, You Can Wait For Sometime.\nIf He Needs To Talk To You, He Will Approve You!\nAnd do not spam else you will be muted/blocked.\n\nPowered by *WhatsGram*`
+                msg: pmMsg ? pmMsg.msg.replace(/\{name}/gi, user).replace(/\{wanrs}/gi, read.msgCount ? read.msgCount : 0) + '\n\nPowered by *Telegram*' : `Hello, *${user}*!\nMy Master is Busy As Of Now, You Can Wait For Sometime.\nIf He Needs To Talk To You, He Will Approve You!\nAnd do not spam else you will be muted/blocked.\n\nPowered by *Telegram*`
             }
         }
     } else if (read.status == "found" && read.allowed == false) { 
@@ -185,7 +185,7 @@ async function handlePm(id, user) {
             } else {
                 return {
                     action: false,
-                    msg: pmMsg ? pmMsg.msg.replace(/\{name}/gi, user).replace(/\{warns}/gi, read.msgCount ? read.msgCount : 0) + '\n\nPowered by *WhatsGram*' :  `Hello, *${user}*!\nMy Master is Busy As Of Now, You Can Wait For Sometime.\nIf He Needs To Talk To You, He Will Approve You!\nYou Have *${read.msgCount}/3 Of Warns*. And do not spam else you will be muted/blocked.\n\nPowered by *WhatsGram*`
+                    msg: pmMsg ? pmMsg.msg.replace(/\{name}/gi, user).replace(/\{warns}/gi, read.msgCount ? read.msgCount : 0) + '\n\nPowered by *Telegram*' :  `Hello, *${user}*!\nMy Master is Busy As Of Now, You Can Wait For Sometime.\nIf He Needs To Talk To You, He Will Approve You!\nYou Have *${read.msgCount}/3 Of Warns*. And do not spam else you will be muted/blocked.\n\nPowered by *Telegram*`
                 }
             }
         }
